@@ -1,0 +1,26 @@
+Funcion nom <- leerNombre(nombre)
+	Definir nom Como Cadena
+	Escribir "Ingrese su nombre: "
+	Leer nom
+FinFuncion
+//tomar apellido
+Funcion ape <- leerApellido(apellido)
+	Definir ape Como Cadena
+	Escribir "Ingrese su apellido: "
+	Leer ape
+FinFuncion
+//saludo
+Funcion saludos <- saludar(nombre, apellido)
+	Definir saludos Como Cadena
+	saludos <- "Buenos días, " + nombre + " " + apellido
+FinFuncion
+//Proceso 
+Algoritmo saludo_modular
+	Definir nombre, apellido, saludo Como Cadena
+	
+	nombre <- leerNombre(nombre)
+	apellido <- leerApellido(apellido)
+	saludo <- saludar(nombre, apellido)
+	
+	Escribir saludo
+FinAlgoritmo
